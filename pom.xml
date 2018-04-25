@@ -37,7 +37,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!--引入Hutool-->
+        <!--引入Hutool工具包-->
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
