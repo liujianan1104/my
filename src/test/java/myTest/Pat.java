@@ -1,7 +1,5 @@
 package myTest;
 
-import ch.qos.logback.core.net.SyslogOutputStream;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -18,6 +16,7 @@ public class Pat {
 
         StringBuffer sb = new StringBuffer();
         HashMap<String, List<String>> dic = new HashMap<String, List<String>>();
+
 
         Matcher m=p1.matcher(param);
         m.find();
@@ -44,9 +43,6 @@ public class Pat {
         }
         dic.put(pStr2,list2);
 
-
-
-
         param = param.replace("ORG","").replace("POS","");
         int i = 0;
         while (i < param.length()) {
@@ -63,7 +59,6 @@ public class Pat {
                             sb.append(s+"\n");
                         }
                     }
-
                 }
                 i++;
             } else {
@@ -71,7 +66,6 @@ public class Pat {
                 i++;
             }
         }
-
         System.out.println(sb.toString());
 
 
