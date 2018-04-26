@@ -18,9 +18,10 @@ public class ZipUtils {
 
         if (inputFile.isDirectory()) { //获得打包文件夹名
             targetFileName = inputFileName.substring(inputFileName.lastIndexOf(File.separator) + 1) + ".tar.gz";
-            zipFile(inputFile,targetFileName);
+            zipFiles(inputFile,outFilePath + File.separator + targetFileName);
         } else { //获得打包文件名
             targetFileName = inputFileName.substring((inputFileName.lastIndexOf(File.separator) + 1), (inputFileName.lastIndexOf("."))) + ".tar.gz";
+            zipFile(inputFile, outFilePath + File.separator + targetFileName);
         }
 
     }

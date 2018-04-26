@@ -9,7 +9,7 @@ public class Test {
 
         ZipUtils m = new ZipUtils();
 
-        m.getGZFile("D:\\testFile\\tar","D:\\testFile\\tar");
+        m.getGZFile("G:\\test","G:\\test");
 //        TarUtilsbak tarUtils = new TarUtilsbak();
 //        tarUtils.execute("D:\\testFile\\tar\\bid_detail_single_src_ggzy.weifang.gov.cn.json","D:\\testFile\\tar");
 //        System.out.println(1);
