@@ -41,7 +41,7 @@
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>4.0.9</version>
+            <version>4.0.10</version>
         </dependency>
 
         <!--压缩文件用-->
