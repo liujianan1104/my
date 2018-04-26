@@ -34,7 +34,7 @@ public class ZipUtils {
 
         if (null != fileList && fileList.length > 0) {
             for (File f : fileList) {
-                getGZFile(fileList[1].getAbsolutePath(), outFileName);
+                zipFile(f, outFileName);
             }
         }
     }

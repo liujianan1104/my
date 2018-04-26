@@ -1,13 +1,15 @@
 package myTest;
 
-import cn.hutool.core.util.ZipUtil;
+import mywork.my.myUtil.ZipUtils;
 
-import java.io.*;
+import java.io.IOException;
 
 public class Test {
     public static void main(String[] args) throws IOException {
 
+        ZipUtils m = new ZipUtils();
 
+        m.getGZFile("D:\\testFile\\tar","D:\\testFile\\tar");
 //        TarUtilsbak tarUtils = new TarUtilsbak();
 //        tarUtils.execute("D:\\testFile\\tar\\bid_detail_single_src_ggzy.weifang.gov.cn.json","D:\\testFile\\tar");
 //        System.out.println(1);
@@ -25,7 +27,7 @@ public class Test {
 //        param.put("【(.+?)】POS","POS");
 //        System.out.println(ExplainUtils.getExplain(in, param));
 //        ZipUtil.zip("D:\\testFile\\tar\\bid_detail_single_src_ggzy.weifang.gov.cn.json","D:\\testFile\\tar\\1.tar");
-        ZipUtil.zip("D:\\testFile\\tar\\新建文本文档.txt","D:\\testFile\\tar\\1.tar.gz");
+//        ZipUtil.zip("D:\\testFile\\tar\\新建文本文档.txt","D:\\testFile\\tar\\1.tar.gz");
 
 
 //        File f = new File("D:\\testFile\\tar\\bid_detail_single_src_ggzy.weifang.gov.cn.json");
