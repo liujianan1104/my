@@ -25,6 +25,16 @@ public class HashTest implements Runnable {
         }
 
         System.out.println(h.getH().get("1"));
+
+        String a = "a";
+        String b = "a";
+        HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
+
+        hashMap.put(a,1);
+        hashMap.put(b,2);
+        System.out.println(hashMap.get(a));
+
+
     }
 
 
