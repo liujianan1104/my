@@ -44,13 +44,36 @@
             <version>4.0.10</version>
         </dependency>
 
-        <!--压缩文件用-->
-        <dependency>
-            <groupId>org.apache.ant</groupId>
-            <artifactId>ant</artifactId>
-            <version>1.9.4</version>
-        </dependency>
+        <!--&lt;!&ndash;压缩文件用&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.ant</groupId>-->
+            <!--<artifactId>ant</artifactId>-->
+            <!--<version>1.9.4</version>-->
+        <!--</dependency>-->
 
+        <!--文件编码用-->
+        <!--<dependency>-->
+            <!--<groupId>cpdetector</groupId>-->
+            <!--<artifactId>cpdetector</artifactId>-->
+            <!--<version>1.0.10</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>commons-io</groupId>-->
+            <!--<artifactId>commons-io</artifactId>-->
+            <!--<version>2.4</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.apache.any23</groupId>-->
+            <!--<artifactId>apache-any23-encoding</artifactId>-->
+            <!--<version>1.1</version>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>2.4.12</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
