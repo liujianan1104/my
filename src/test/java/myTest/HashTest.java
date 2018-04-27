@@ -10,7 +10,6 @@ public class HashTest {
 //        new Thread(new Runnable() {
 //            @Override
 //            public void run() {
-//                // TODO Auto-generated method stub
 //                System.out.println("线程1执行");
 //                for (int i = 0; i < 1000; i++) {
 //                    table.put(i,i);
@@ -22,7 +21,6 @@ public class HashTest {
 //
 //            @Override
 //            public void run() {
-//                // TODO Auto-generated method stub
 //                System.out.println("线程2执行");
 //                for (int i = 1000; i < 2000; i++) {
 //                    table.put(i, i);
@@ -41,7 +39,6 @@ public class HashTest {
 
             @Override
             public void run() {
-                // TODO Auto-generated method stub
                 System.out.println("线程1执行");
                 for (int i = 0; i < 1000; i++) {
                     map.put(i,i);
@@ -53,7 +50,6 @@ public class HashTest {
 
             @Override
             public void run() {
-                // TODO Auto-generated method stub
                 System.out.println("线程2执行");
                 for (int i = 1000; i < 2000; i++) {
                     map.put(i, i);
