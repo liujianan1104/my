@@ -24,7 +24,7 @@ public class GuavaTest {
 
         Person.person = CacheBuilder.newBuilder().
                 maximumSize(1000).
-                expireAfterWrite(4, TimeUnit.SECONDS).
+                expireAfterWrite(4, TimeUnit.SECONDS).//设置缓存失效时间为4s
                 build(new CacheLoader<String, Person>() {
                     @Override
                     public Person load(String key) throws Exception {
@@ -48,8 +48,8 @@ public class GuavaTest {
                 });
         System.out.println(Person.person.get("11").getAge());
         System.out.println(Person.person.size());
-        Thread.sleep(3*1000);
-
+        Thread.sleep(3*1000);//测试3s后不会失效，get时不会重新加载缓存
+//        Thread.sleep(5*1000);//测试5s后失效，get时重新加载缓存
         System.out.println(Person.person.get("11").getAge());
 
 //        for (int i=0; i<10; i++) {
