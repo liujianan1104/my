@@ -43,9 +43,12 @@ public class HashTest {
                 for (int i = 0; i < 1000; i++) {
                     map.put(i,i);
                 }
-                System.out.println("线程1---------" + map.get(500));
+                System.out.println("线程1---------500：" + map.get(500));
+                System.out.println("线程1---------1500：" + map.get(1500));
             }
         }).start();
+
+
         new Thread(new Runnable() {
 
             @Override
@@ -54,7 +57,8 @@ public class HashTest {
                 for (int i = 1000; i < 2000; i++) {
                     map.put(i, i);
                 }
-                System.out.println("线程2---------" + map.get(1500));
+                System.out.println("线程2---------1500：" + map.get(1500));
+                System.out.println("线程2---------500：" + map.get(500));
             }
         }).start();
     }
