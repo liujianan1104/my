@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <!-- 文件输出格式 -->
+    <property name="PATTERN"
+              value="%-12(%d{yyyy-MM-dd HH:mm:ss.SSS}) |-%-5level [%thread] %clr(%-40.40logger{39}) [%L] -| %msg%n"/>
+
+
+    <!-- 日志文件路径 -->
+    <springProperty scope="context" name="springAppName" source="spring.application.name"/>
+    <springProperty scope="context" name="logConsole" source="log.console"/>
+    <property name="cons"
+              value="${logConsole}"/>
+
+    <!--生产环境日志文件路径-->
+    <property name="PROD_LOG_PATH" value="D:\work\logs"/>
+    <property name="PROD_ERROR_LOG" value="${PROD_LOG_PATH}/error.log"/>
+    <property name="PROD_INFO_LOG" value="${PROD_LOG_PATH}/info.log"/>
+
+    <!-- 生产环境 -->
+    <springProfile name="prod">
+
+        <!-- root将级别为“INFO”及大于“INFO”的日志信息交给已经配置好的名为“Console”的appender处理 -->
+        <!--<if condition='p("cons").contains("true")'>-->
+            <!--<then>-->
+                <!--<appender name="console" class="ch.qos.logback.core.ConsoleAppender">-->
+                    <!--&lt;!&ndash; 过滤掉 TRACE、DEBUG 级别的日志 &ndash;&gt;-->
+                    <!--&lt;!&ndash;<filter class="ch.qos.logback.classic.filter.ThresholdFilter">-->
+                        <!--<level>INFO</level>-->
+                    <!--</filter>&ndash;&gt;-->
+
+                    <!--<encoder>-->
+                        <!--<pattern>${PATTERN}</pattern>-->
+                        <!--<charset>utf8</charset>-->
+                    <!--</encoder>-->
+                <!--</appender>-->
+                <!--<root level="info">-->
+                    <!--<appender-ref ref="console"/>-->
+                <!--</root>-->
+            <!--</then>-->
+            <!--<else>-->
+                <!--&lt;!&ndash; Appender to log to file &ndash;&gt;-->
+                <!--<appender name="infoFile" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+                    <!--<file>${PROD_INFO_LOG}</file>-->
+                    <!--<append>true</append>-->
+                    <!--&lt;!&ndash; 过滤掉 TRACE、DEBUG 级别的日志 &ndash;&gt;-->
+                    <!--<filter class="ch.qos.logback.classic.filter.ThresholdFilter">-->
+                        <!--<level>INFO</level>-->
+                    <!--</filter>-->
+                    <!--&lt;!&ndash;日志按照天数进行备份，maxHistory为1，保留一天日志&ndash;&gt;-->
+                    <!--<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+                        <!--<fileNamePattern>${PROD_INFO_LOG}.%d{yyyy-MM-dd}.gz</fileNamePattern>-->
+                        <!--<maxHistory>1</maxHistory>-->
+                    <!--</rollingPolicy>-->
+
+                    <!--<encoder>-->
+                        <!--<pattern>${PATTERN}</pattern>-->
+                        <!--<charset>utf8</charset>-->
+                    <!--</encoder>-->
+                <!--</appender>-->
+
+                <!--&lt;!&ndash; Appender to log to file &ndash;&gt;-->
+                <!--<appender name="errorFile" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+                    <!--<file>${PROD_ERROR_LOG}</file>-->
+                    <!--<append>true</append>-->
+                    <!--&lt;!&ndash; 过滤掉 TRACE、DEBUG、INFO 级别的日志 &ndash;&gt;-->
+                    <!--<filter class="ch.qos.logback.classic.filter.ThresholdFilter">-->
+                        <!--<level>ERROR</level>-->
+                    <!--</filter>-->
+                    <!--&lt;!&ndash;日志按照天数进行备份，maxHistory为1，保留一天日志&ndash;&gt;-->
+                    <!--<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+                        <!--<fileNamePattern>${PROD_ERROR_LOG}.%d{yyyy-MM-dd}.gz</fileNamePattern>-->
+                        <!--<maxHistory>1</maxHistory>-->
+                    <!--</rollingPolicy>-->
+
+                    <!--<encoder>-->
+                        <!--<pattern>${PATTERN}</pattern>-->
+                        <!--<charset>utf8</charset>-->
+                    <!--</encoder>-->
+                <!--</appender>-->
+                <!--<root level="info">-->
+                    <!--<appender-ref ref="infoFile"/>-->
+                    <!--<appender-ref ref="errorFile"/>-->
+                <!--</root>-->
+            <!--</else>-->
+        <!--</if>-->
+
+        <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+            <!-- 过滤掉 TRACE、DEBUG 级别的日志 -->
+            <!--<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+                <level>INFO</level>
+            </filter>-->
+
+            <encoder>
+                <pattern>${PATTERN}</pattern>
+                <charset>utf8</charset>
+            </encoder>
+        </appender>
+
+        <appender name="infoFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>${PROD_INFO_LOG}</file>
+            <append>true</append>
+            <!-- 过滤掉 TRACE、DEBUG 级别的日志 -->
+            <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+                <level>INFO</level>
+            </filter>
+            <!--日志按照天数进行备份，maxHistory为1，保留一天日志-->
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                <fileNamePattern>${PROD_INFO_LOG}.%d{yyyy-MM-dd}.gz</fileNamePattern>
+                <maxHistory>1</maxHistory>
+            </rollingPolicy>
+
+            <encoder>
+                <pattern>${PATTERN}</pattern>
+                <charset>utf8</charset>
+            </encoder>
+        </appender>
+
+        <!-- Appender to log to file -->
+        <appender name="errorFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>${PROD_ERROR_LOG}</file>
+            <append>true</append>
+            <!-- 过滤掉 TRACE、DEBUG、INFO 级别的日志 -->
+            <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+                <level>ERROR</level>
+            </filter>
+            <!--日志按照天数进行备份，maxHistory为1，保留一天日志-->
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                <fileNamePattern>${PROD_ERROR_LOG}.%d{yyyy-MM-dd}.gz</fileNamePattern>
+                <maxHistory>1</maxHistory>
+            </rollingPolicy>
+
+            <encoder>
+                <pattern>${PATTERN}</pattern>
+                <charset>utf8</charset>
+            </encoder>
+        </appender>
+        <root level="info">
+            <appender-ref ref="console"/>
+            <appender-ref ref="infoFile"/>
+            <appender-ref ref="errorFile"/>
+        </root>
+
+
+
+    </springProfile>
+</configuration>
