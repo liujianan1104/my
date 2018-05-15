@@ -19,7 +19,7 @@
     <property name="PROD_INFO_LOG" value="${PROD_LOG_PATH}/info.log"/>
 
     <!-- 生产环境 -->
-    <springProfile name="prod">
+    <!--<springProfile name="prod">-->
 
         <!-- root将级别为“INFO”及大于“INFO”的日志信息交给已经配置好的名为“Console”的appender处理 -->
         <!--<if condition='p("cons").contains("true")'>-->
@@ -144,5 +144,5 @@
 
 
 
-    </springProfile>
+    <!--</springProfile>-->
 </configuration>
