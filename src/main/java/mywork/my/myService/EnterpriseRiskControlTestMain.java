@@ -1,10 +1,10 @@
-package com.dinfo.bid.controller;
+package mywork.my.myService;
 
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.log.Log;
 import cn.hutool.log.LogFactory;
-import com.dinfo.bid.bean.OECResult;
-import com.dinfo.bid.utils.OECUtils;
+import mywork.my.myBean.OECResult;
+import mywork.my.myUtil.OECUtils;
 
 import java.io.*;
 import java.util.Date;
