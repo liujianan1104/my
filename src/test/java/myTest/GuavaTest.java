@@ -2,7 +2,7 @@ package myTest;
 
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
-import org.apache.commons.lang.StringUtils;
+import org.springframework.util.StringUtils;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
