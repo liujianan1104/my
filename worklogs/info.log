@@ -1,0 +1,381 @@
+2018-05-18 16:34:24.970 |-INFO  [main] mywork.my.MyApplication                  [48] -| Starting MyApplication on computer with PID 3956 (D:\work\workspace\myWork\my\oec_nlp\target\classes started by admin in D:\work\workspace\myWork\my)
+2018-05-18 16:34:24.984 |-INFO  [main] mywork.my.MyApplication                  [593] -| No active profile set, falling back to default profiles: default
+2018-05-18 16:34:25.066 |-INFO  [main] ationConfigEmbeddedWebApplicationContext [583] -| Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4116aac9: startup date [Fri May 18 16:34:25 CST 2018]; root of context hierarchy
+2018-05-18 16:34:26.444 |-INFO  [main] f.a.AutowiredAnnotationBeanPostProcessor [155] -| JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-05-18 16:34:27.632 |-INFO  [main] s.b.c.e.t.TomcatEmbeddedServletContainer [92] -| Tomcat initialized with port(s): 8080 (http)
+2018-05-18 16:34:27.697 |-INFO  [main] o.apache.catalina.core.StandardService   [180] -| Starting service [Tomcat]
+2018-05-18 16:34:27.698 |-INFO  [main] org.apache.catalina.core.StandardEngine  [180] -| Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-18 16:34:27.949 |-WARN  [localhost-startStop-1] .t.TomcatEmbeddedServletContainerFactory [157] -| Unable to open jar 'C:\Users\admin\.m2\repository\org\slf4j\slf4j-log4j12\1.7.16\slf4j-log4j12-1.7.16.jar' to determine if it contains static resources
+java.io.FileNotFoundException: C:\Users\admin\.m2\repository\org\slf4j\slf4j-log4j12\1.7.16\slf4j-log4j12-1.7.16.jar (系统找不到指定的路径。)
+	at java.util.zip.ZipFile.open(Native Method) ~[na:1.8.0_121]
+	at java.util.zip.ZipFile.<init>(ZipFile.java:219) ~[na:1.8.0_121]
+	at java.util.zip.ZipFile.<init>(ZipFile.java:149) ~[na:1.8.0_121]
+	at java.util.jar.JarFile.<init>(JarFile.java:166) ~[na:1.8.0_121]
+	at java.util.jar.JarFile.<init>(JarFile.java:130) ~[na:1.8.0_121]
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.isResourcesJar(AbstractEmbeddedServletContainerFactory.java:154) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.isStaticResourceJar(AbstractEmbeddedServletContainerFactory.java:115) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.getUrlsOfJarsWithMetaInfResources(AbstractEmbeddedServletContainerFactory.java:101) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.access$100(TomcatEmbeddedServletContainerFactory.java:99) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory$1.lifecycleEvent(TomcatEmbeddedServletContainerFactory.java:228) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2018-05-18 16:34:27.999 |-INFO  [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       [180] -| Initializing Spring embedded WebApplicationContext
+2018-05-18 16:34:27.999 |-INFO  [localhost-startStop-1] o.s.web.context.ContextLoader            [276] -| Root WebApplicationContext: initialization completed in 2933 ms
+2018-05-18 16:34:28.202 |-ERROR [localhost-startStop-1] o.s.b.c.embedded.tomcat.TomcatStarter    [63] -| Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'httpPutFormContentFilter' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.filter.OrderedHttpPutFormContentFilter]: Factory method 'httpPutFormContentFilter' threw exception; nested exception is java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/exc/InvalidDefinitionException
+2018-05-18 16:34:28.253 |-INFO  [main] o.apache.catalina.core.StandardService   [180] -| Stopping service [Tomcat]
+2018-05-18 16:34:28.281 |-WARN  [main] ationConfigEmbeddedWebApplicationContext [551] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+2018-05-18 16:34:28.285 |-WARN  [main] o.s.b.c.e.EventPublishingRunListener     [134] -| Error calling ApplicationEventListener
+java.lang.NoSuchMethodError: ch.qos.logback.classic.LoggerContext.removeObject(Ljava/lang/String;)V
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.markAsUninitialized(LogbackLoggingSystem.java:308) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.cleanUp(LogbackLoggingSystem.java:198) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.logging.LoggingApplicationListener.onApplicationFailedEvent(LoggingApplicationListener.java:259) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:224) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) [spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:158) [spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122) [spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.boot.context.event.EventPublishingRunListener.finished(EventPublishingRunListener.java:115) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.callFinishedListener(SpringApplicationRunListeners.java:79) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.finished(SpringApplicationRunListeners.java:72) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:745) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at mywork.my.MyApplication.main(MyApplication.java:13) [classes/:na]
+2018-05-18 16:34:28.290 |-INFO  [main] utoConfigurationReportLoggingInitializer [101] -| 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-05-18 16:34:28.295 |-ERROR [main] o.s.boot.SpringApplication               [771] -| Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at mywork.my.MyApplication.main(MyApplication.java:13) [classes/:na]
+Caused by: org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:138) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:87) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:554) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:179) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:164) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'httpPutFormContentFilter' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.filter.OrderedHttpPutFormContentFilter]: Factory method 'httpPutFormContentFilter' threw exception; nested exception is java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/exc/InvalidDefinitionException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:234) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:182) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:177) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:159) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:80) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getServletContextInitializerBeans(EmbeddedWebApplicationContext.java:241) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.selfInitialize(EmbeddedWebApplicationContext.java:228) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.access$000(EmbeddedWebApplicationContext.java:89) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext$1.onStartup(EmbeddedWebApplicationContext.java:213) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:55) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5245) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_121]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.filter.OrderedHttpPutFormContentFilter]: Factory method 'httpPutFormContentFilter' threw exception; nested exception is java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/exc/InvalidDefinitionException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/exc/InvalidDefinitionException
+	at org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.<init>(AllEncompassingFormHttpMessageConverter.java:74) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.HttpPutFormContentFilter.<init>(HttpPutFormContentFilter.java:64) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.filter.OrderedHttpPutFormContentFilter.<init>(OrderedHttpPutFormContentFilter.java:29) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration.httpPutFormContentFilter(WebMvcAutoConfiguration.java:149) ~[spring-boot-autoconfigure-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$13526c04.CGLIB$httpPutFormContentFilter$1(<generated>) ~[spring-boot-autoconfigure-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$13526c04$$FastClassBySpringCGLIB$$299f6c8e.invoke(<generated>) ~[spring-boot-autoconfigure-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$13526c04.httpPutFormContentFilter(<generated>) ~[spring-boot-autoconfigure-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	... 27 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.exc.InvalidDefinitionException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_121]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_121]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_121]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_121]
+	... 41 common frames omitted
+2018-05-18 16:38:57.684 |-INFO  [main] mywork.my.MyApplication                  [48] -| Starting MyApplication on computer with PID 2548 (D:\work\workspace\myWork\my\oec_nlp\target\classes started by admin in D:\work\workspace\myWork\my)
+2018-05-18 16:38:57.689 |-INFO  [main] mywork.my.MyApplication                  [593] -| No active profile set, falling back to default profiles: default
+2018-05-18 16:38:57.888 |-INFO  [main] ationConfigEmbeddedWebApplicationContext [583] -| Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4116aac9: startup date [Fri May 18 16:38:57 CST 2018]; root of context hierarchy
+2018-05-18 16:38:59.243 |-INFO  [main] f.a.AutowiredAnnotationBeanPostProcessor [155] -| JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-05-18 16:39:00.286 |-INFO  [main] s.b.c.e.t.TomcatEmbeddedServletContainer [92] -| Tomcat initialized with port(s): 8080 (http)
+2018-05-18 16:39:00.327 |-INFO  [main] o.apache.catalina.core.StandardService   [180] -| Starting service [Tomcat]
+2018-05-18 16:39:00.328 |-INFO  [main] org.apache.catalina.core.StandardEngine  [180] -| Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-18 16:39:00.655 |-WARN  [localhost-startStop-1] .t.TomcatEmbeddedServletContainerFactory [157] -| Unable to open jar 'C:\Users\admin\.m2\repository\org\slf4j\slf4j-log4j12\1.7.16\slf4j-log4j12-1.7.16.jar' to determine if it contains static resources
+java.io.FileNotFoundException: C:\Users\admin\.m2\repository\org\slf4j\slf4j-log4j12\1.7.16\slf4j-log4j12-1.7.16.jar (系统找不到指定的路径。)
+	at java.util.zip.ZipFile.open(Native Method) ~[na:1.8.0_121]
+	at java.util.zip.ZipFile.<init>(ZipFile.java:219) ~[na:1.8.0_121]
+	at java.util.zip.ZipFile.<init>(ZipFile.java:149) ~[na:1.8.0_121]
+	at java.util.jar.JarFile.<init>(JarFile.java:166) ~[na:1.8.0_121]
+	at java.util.jar.JarFile.<init>(JarFile.java:130) ~[na:1.8.0_121]
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.isResourcesJar(AbstractEmbeddedServletContainerFactory.java:154) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.isStaticResourceJar(AbstractEmbeddedServletContainerFactory.java:115) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.getUrlsOfJarsWithMetaInfResources(AbstractEmbeddedServletContainerFactory.java:101) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.access$100(TomcatEmbeddedServletContainerFactory.java:99) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory$1.lifecycleEvent(TomcatEmbeddedServletContainerFactory.java:228) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2018-05-18 16:39:00.696 |-INFO  [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       [180] -| Initializing Spring embedded WebApplicationContext
+2018-05-18 16:39:00.696 |-INFO  [localhost-startStop-1] o.s.web.context.ContextLoader            [276] -| Root WebApplicationContext: initialization completed in 2808 ms
+2018-05-18 16:39:00.860 |-ERROR [localhost-startStop-1] o.s.b.c.embedded.tomcat.TomcatStarter    [63] -| Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'httpPutFormContentFilter' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.filter.OrderedHttpPutFormContentFilter]: Factory method 'httpPutFormContentFilter' threw exception; nested exception is java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/exc/InvalidDefinitionException
+2018-05-18 16:39:00.929 |-INFO  [main] o.apache.catalina.core.StandardService   [180] -| Stopping service [Tomcat]
+2018-05-18 16:39:00.936 |-WARN  [main] ationConfigEmbeddedWebApplicationContext [551] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+2018-05-18 16:39:00.941 |-WARN  [main] o.s.b.c.e.EventPublishingRunListener     [134] -| Error calling ApplicationEventListener
+java.lang.NoSuchMethodError: ch.qos.logback.classic.LoggerContext.removeObject(Ljava/lang/String;)V
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.markAsUninitialized(LogbackLoggingSystem.java:308) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.cleanUp(LogbackLoggingSystem.java:198) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.logging.LoggingApplicationListener.onApplicationFailedEvent(LoggingApplicationListener.java:259) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:224) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) [spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:158) [spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122) [spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.boot.context.event.EventPublishingRunListener.finished(EventPublishingRunListener.java:115) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.callFinishedListener(SpringApplicationRunListeners.java:79) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.finished(SpringApplicationRunListeners.java:72) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:745) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at mywork.my.MyApplication.main(MyApplication.java:13) [classes/:na]
+2018-05-18 16:39:00.945 |-INFO  [main] utoConfigurationReportLoggingInitializer [101] -| 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-05-18 16:39:00.957 |-ERROR [main] o.s.boot.SpringApplication               [771] -| Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at mywork.my.MyApplication.main(MyApplication.java:13) [classes/:na]
+Caused by: org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:138) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:87) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:554) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:179) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:164) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'httpPutFormContentFilter' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.filter.OrderedHttpPutFormContentFilter]: Factory method 'httpPutFormContentFilter' threw exception; nested exception is java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/exc/InvalidDefinitionException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:234) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:182) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:177) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:159) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:80) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getServletContextInitializerBeans(EmbeddedWebApplicationContext.java:241) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.selfInitialize(EmbeddedWebApplicationContext.java:228) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.access$000(EmbeddedWebApplicationContext.java:89) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext$1.onStartup(EmbeddedWebApplicationContext.java:213) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:55) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5245) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_121]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.filter.OrderedHttpPutFormContentFilter]: Factory method 'httpPutFormContentFilter' threw exception; nested exception is java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/exc/InvalidDefinitionException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/exc/InvalidDefinitionException
+	at org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.<init>(AllEncompassingFormHttpMessageConverter.java:74) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.HttpPutFormContentFilter.<init>(HttpPutFormContentFilter.java:64) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.filter.OrderedHttpPutFormContentFilter.<init>(OrderedHttpPutFormContentFilter.java:29) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration.httpPutFormContentFilter(WebMvcAutoConfiguration.java:149) ~[spring-boot-autoconfigure-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$f272fd5.CGLIB$httpPutFormContentFilter$1(<generated>) ~[spring-boot-autoconfigure-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$f272fd5$$FastClassBySpringCGLIB$$6706ef92.invoke(<generated>) ~[spring-boot-autoconfigure-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$f272fd5.httpPutFormContentFilter(<generated>) ~[spring-boot-autoconfigure-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	... 27 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.exc.InvalidDefinitionException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_121]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_121]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_121]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_121]
+	... 41 common frames omitted
+2018-05-18 16:44:56.847 |-INFO  [main] mywork.my.MyApplication                  [48] -| Starting MyApplication on computer with PID 10876 (D:\work\workspace\myWork\my\oec_nlp\target\classes started by admin in D:\work\workspace\myWork\my)
+2018-05-18 16:44:56.852 |-INFO  [main] mywork.my.MyApplication                  [593] -| No active profile set, falling back to default profiles: default
+2018-05-18 16:44:56.993 |-INFO  [main] ationConfigEmbeddedWebApplicationContext [583] -| Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4116aac9: startup date [Fri May 18 16:44:56 CST 2018]; root of context hierarchy
+2018-05-18 16:44:58.275 |-INFO  [main] f.a.AutowiredAnnotationBeanPostProcessor [155] -| JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-05-18 16:44:59.303 |-INFO  [main] s.b.c.e.t.TomcatEmbeddedServletContainer [92] -| Tomcat initialized with port(s): 8080 (http)
+2018-05-18 16:44:59.347 |-INFO  [main] o.apache.catalina.core.StandardService   [180] -| Starting service [Tomcat]
+2018-05-18 16:44:59.347 |-INFO  [main] org.apache.catalina.core.StandardEngine  [180] -| Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-18 16:44:59.610 |-WARN  [localhost-startStop-1] .t.TomcatEmbeddedServletContainerFactory [157] -| Unable to open jar 'C:\Users\admin\.m2\repository\org\slf4j\slf4j-log4j12\1.7.16\slf4j-log4j12-1.7.16.jar' to determine if it contains static resources
+java.io.FileNotFoundException: C:\Users\admin\.m2\repository\org\slf4j\slf4j-log4j12\1.7.16\slf4j-log4j12-1.7.16.jar (系统找不到指定的路径。)
+	at java.util.zip.ZipFile.open(Native Method) ~[na:1.8.0_121]
+	at java.util.zip.ZipFile.<init>(ZipFile.java:219) ~[na:1.8.0_121]
+	at java.util.zip.ZipFile.<init>(ZipFile.java:149) ~[na:1.8.0_121]
+	at java.util.jar.JarFile.<init>(JarFile.java:166) ~[na:1.8.0_121]
+	at java.util.jar.JarFile.<init>(JarFile.java:130) ~[na:1.8.0_121]
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.isResourcesJar(AbstractEmbeddedServletContainerFactory.java:154) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.isStaticResourceJar(AbstractEmbeddedServletContainerFactory.java:115) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.AbstractEmbeddedServletContainerFactory.getUrlsOfJarsWithMetaInfResources(AbstractEmbeddedServletContainerFactory.java:101) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.access$100(TomcatEmbeddedServletContainerFactory.java:99) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory$1.lifecycleEvent(TomcatEmbeddedServletContainerFactory.java:228) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2018-05-18 16:44:59.659 |-INFO  [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       [180] -| Initializing Spring embedded WebApplicationContext
+2018-05-18 16:44:59.659 |-INFO  [localhost-startStop-1] o.s.web.context.ContextLoader            [276] -| Root WebApplicationContext: initialization completed in 2666 ms
+2018-05-18 16:44:59.834 |-ERROR [localhost-startStop-1] o.s.b.c.embedded.tomcat.TomcatStarter    [63] -| Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'httpPutFormContentFilter' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.filter.OrderedHttpPutFormContentFilter]: Factory method 'httpPutFormContentFilter' threw exception; nested exception is java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/exc/InvalidDefinitionException
+2018-05-18 16:44:59.880 |-INFO  [main] o.apache.catalina.core.StandardService   [180] -| Stopping service [Tomcat]
+2018-05-18 16:44:59.887 |-WARN  [main] ationConfigEmbeddedWebApplicationContext [551] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+2018-05-18 16:44:59.893 |-WARN  [main] o.s.b.c.e.EventPublishingRunListener     [134] -| Error calling ApplicationEventListener
+java.lang.NoSuchMethodError: ch.qos.logback.classic.LoggerContext.removeObject(Ljava/lang/String;)V
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.markAsUninitialized(LogbackLoggingSystem.java:308) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.cleanUp(LogbackLoggingSystem.java:198) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.logging.LoggingApplicationListener.onApplicationFailedEvent(LoggingApplicationListener.java:259) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:224) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) [spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:158) [spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122) [spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.boot.context.event.EventPublishingRunListener.finished(EventPublishingRunListener.java:115) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.callFinishedListener(SpringApplicationRunListeners.java:79) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.finished(SpringApplicationRunListeners.java:72) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:745) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at mywork.my.MyApplication.main(MyApplication.java:13) [classes/:na]
+2018-05-18 16:44:59.896 |-INFO  [main] utoConfigurationReportLoggingInitializer [101] -| 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-05-18 16:44:59.902 |-ERROR [main] o.s.boot.SpringApplication               [771] -| Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at mywork.my.MyApplication.main(MyApplication.java:13) [classes/:na]
+Caused by: org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:138) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:87) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:554) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:179) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:164) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'httpPutFormContentFilter' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.filter.OrderedHttpPutFormContentFilter]: Factory method 'httpPutFormContentFilter' threw exception; nested exception is java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/exc/InvalidDefinitionException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:234) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:182) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:177) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:159) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:80) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getServletContextInitializerBeans(EmbeddedWebApplicationContext.java:241) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.selfInitialize(EmbeddedWebApplicationContext.java:228) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.access$000(EmbeddedWebApplicationContext.java:89) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext$1.onStartup(EmbeddedWebApplicationContext.java:213) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:55) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5245) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_121]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.filter.OrderedHttpPutFormContentFilter]: Factory method 'httpPutFormContentFilter' threw exception; nested exception is java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/exc/InvalidDefinitionException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/exc/InvalidDefinitionException
+	at org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.<init>(AllEncompassingFormHttpMessageConverter.java:74) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.web.filter.HttpPutFormContentFilter.<init>(HttpPutFormContentFilter.java:64) ~[spring-web-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.filter.OrderedHttpPutFormContentFilter.<init>(OrderedHttpPutFormContentFilter.java:29) ~[spring-boot-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration.httpPutFormContentFilter(WebMvcAutoConfiguration.java:149) ~[spring-boot-autoconfigure-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$bef3a99a.CGLIB$httpPutFormContentFilter$1(<generated>) ~[spring-boot-autoconfigure-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$bef3a99a$$FastClassBySpringCGLIB$$b46f136e.invoke(<generated>) ~[spring-boot-autoconfigure-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$bef3a99a.httpPutFormContentFilter(<generated>) ~[spring-boot-autoconfigure-1.5.12.RELEASE.jar:1.5.12.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) ~[spring-beans-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	... 27 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.exc.InvalidDefinitionException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_121]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_121]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331) ~[na:1.8.0_121]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_121]
+	... 41 common frames omitted
