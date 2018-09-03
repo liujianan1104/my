@@ -41,15 +41,14 @@
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>4.0.10</version>
+            <version>4.1.7</version>
         </dependency>
 
 
-
         <!--<dependency>-->
-            <!--<groupId>com.alibaba</groupId>-->
-            <!--<artifactId>fastjson</artifactId>-->
-            <!--<version>1.2.46</version>-->
+        <!--<groupId>com.alibaba</groupId>-->
+        <!--<artifactId>fastjson</artifactId>-->
+        <!--<version>1.2.46</version>-->
         <!--</dependency>-->
 
         <!--logback中引用if标签-->
@@ -80,9 +79,9 @@
         </dependency>
         <!--获得文件编码用-->
         <!--<dependency>-->
-            <!--<groupId>org.codehaus.groovy</groupId>-->
-            <!--<artifactId>groovy-all</artifactId>-->
-            <!--<version>2.4.12</version>-->
+        <!--<groupId>org.codehaus.groovy</groupId>-->
+        <!--<artifactId>groovy-all</artifactId>-->
+        <!--<version>2.4.12</version>-->
         <!--</dependency>-->
 
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->

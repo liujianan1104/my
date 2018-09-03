@@ -16,10 +16,12 @@ public interface BaseCom {
      */
 //    public static final String HASH_KEY_DATASET="dataset";
     public static final String COMPARAMKEY_CLASSIFYNAME = "classifyName";
+
     /**
      * 组件执行主方法
-     * @param input 输入的dataset
-     * @param paramMap 参数列表
+     *
+     * @param input      输入的dataset
+     * @param paramMap   参数列表
      * @param comContext 组件上下文，可以把组件中产生的词典等信息，放到上下文中，供下游组件使用
      * @return 组件返回的结果
      */
@@ -27,8 +29,9 @@ public interface BaseCom {
 
     /**
      * spark算法执行结果封装类，debug及传递到结束组件前调用
+     *
      * @param unwrapperDs 算法执行结果（未封装）
-     * @param comContext 组件上下文
+     * @param comContext  组件上下文
      * @return
      * @throws Exception
      */
@@ -36,25 +39,28 @@ public interface BaseCom {
 
     /**
      * 将算法对应的效果参数放到目标map里(输入输出参数除外)
+     *
      * @param sourceMap 来源参数map 【模型训练train方法或组件执行主方法sparkExecute中的输入参数】
      * @param targetMap 目标参数map 【调用nlp算法包pipeline需要传递的参数对象】
      * @throws Exception
      */
-    public void appendComParamMap(Map<String, Object> sourceMap, Map<String, String> targetMap)throws Exception;
+    public void appendComParamMap(Map<String, Object> sourceMap, Map<String, String> targetMap) throws Exception;
 
     /**
      * Http方式调用的组件方法
-     * @param input 输入map
-     * @param paramMap 参数列表
+     *
+     * @param input      输入map
+     * @param paramMap   参数列表
      * @param comContext 组件上下文，可以把组件中产生的词典等信息，放到上下文中，供下游组件使用
      * @return Http组件返回的结果
      */
-    public Map<String,List<Object>> httpLocalExecute(Map<String, List<Object>> input, Map<String, Object> paramMap, Map<String, Object> comContext) throws Exception;
+    public Map<String, List<Object>> httpLocalExecute(Map<String, List<Object>> input, Map<String, Object> paramMap, Map<String, Object> comContext) throws Exception;
 
     /**
      * http方式 spark算法执行结果封装类，传递到结束组件前调用
+     *
      * @param unwrapperRs 算法执行结果（未封装）
-     * @param comContext 组件上下文
+     * @param comContext  组件上下文
      * @return
      * @throws Exception
      */

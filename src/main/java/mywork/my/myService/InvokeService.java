@@ -24,9 +24,9 @@ public class InvokeService {
 
         Method method;
         Class classObject = Class.forName("mywork.my.myService.MethodTest");
-        method=classObject.getMethod("getA", String.class);
+        method = classObject.getMethod("getA", String.class);
         Object o = applicationContext.getBean(classObject);
-        method.invoke(o,"1");
+        method.invoke(o, "1");
 
     }
 

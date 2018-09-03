@@ -30,14 +30,14 @@ public class AppServer implements BaseCom {
     }
 
     @Override
-    public Map<String,List<Object>> httpLocalExecute(Map<String,List<Object>> input, Map<String, Object> paramMap, Map<String, Object> comContext) throws Exception{
+    public Map<String, List<Object>> httpLocalExecute(Map<String, List<Object>> input, Map<String, Object> paramMap, Map<String, Object> comContext) throws Exception {
 
-        Map<String,List<Object>> outMap = new HashMap<>();
+        Map<String, List<Object>> outMap = new HashMap<>();
 
         //获取数据源并逐条处理
-        List<String> data = (List)input.get("in");
+        List<String> data = (List) input.get("in");
         List<Object> result = new ArrayList<>();
-        for(String str: data){
+        for (String str : data) {
             result.add(convertString(str));
         }
 
@@ -53,17 +53,18 @@ public class AppServer implements BaseCom {
 
     /**
      * 大小写字母转换
+     *
      * @param str
      * @return
      */
     private String convertString(String str) {
         char[] ch = str.toCharArray();
         StringBuffer sbf = new StringBuffer();
-        for(int i=0; i< ch.length; i++){
+        for (int i = 0; i < ch.length; i++) {
             if (ch[i] >= 'A' && ch[i] <= 'Z') {
-                sbf.append(ch[i]+=32);
+                sbf.append(ch[i] += 32);
             } else if (ch[i] >= 'a' && ch[i] <= 'z') {
-                sbf.append((ch[i]-=32));
+                sbf.append((ch[i] -= 32));
             } else {
                 sbf.append(ch[i]);
             }

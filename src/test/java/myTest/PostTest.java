@@ -14,12 +14,12 @@ import java.util.Map;
  * Date: 2018/4/24
  * Desc:
  * headers.put("Accept", "application/json");//表示接受json类型的响应
- headers.put("Content-Type", "application/json; charset=UTF-8");//表示传递给服务器的参数是json类型
+ * headers.put("Content-Type", "application/json; charset=UTF-8");//表示传递给服务器的参数是json类型
  */
 public class PostTest {
 
     public static void main(String[] args) {
-        Map<String,String> classMap = new HashMap<String, String>();
+        Map<String, String> classMap = new HashMap<String, String>();
         String c_model_url = "http://60.247.77.152:8990/run/322/865";
         String token = "0a44a905e2a2423a8af8a6c4acb9ae62";
         String c_input = "input";
@@ -27,7 +27,7 @@ public class PostTest {
         String c_response = sendPost(c_model_url, token, c_input, nerContent);
         JSONObject json = JSONUtil.parseObj(c_response);
         int status = json.getInt("status");
-        if(status == 200){
+        if (status == 200) {
             json = json.getJSONObject("data");
             json = json.getJSONObject("result");
             JSONArray cClasResults = json.getJSONArray("cClasResult");
@@ -68,7 +68,7 @@ public class PostTest {
     }
 
     public static String sendPost(String model_url, String token, String input, String data) {
-        String body = "token=" + token + "&"+input +"="+ data;
+        String body = "token=" + token + "&" + input + "=" + data;
         String response = HttpRequest.post(model_url)
                 .header(Header.ACCEPT, "application/json")
                 .body(body)

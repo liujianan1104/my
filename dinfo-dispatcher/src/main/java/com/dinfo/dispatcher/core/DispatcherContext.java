@@ -41,6 +41,7 @@ public class DispatcherContext {
 
     /**
      * 初始化加载路径下jar包
+     *
      * @param path jar包文件路径
      */
     public static void initialize(String path) {
@@ -61,6 +62,7 @@ public class DispatcherContext {
 
     /**
      * 加载根目录下文件
+     *
      * @param root 根路径
      * @throws IOException
      */
@@ -82,6 +84,7 @@ public class DispatcherContext {
 
     /**
      * 获得jar包文件的url
+     *
      * @param name
      * @throws IOException
      */
@@ -107,6 +110,7 @@ public class DispatcherContext {
 
     /**
      * 加载jar包
+     *
      * @param jarFile
      * @param urls
      * @throws IOException
@@ -135,6 +139,7 @@ public class DispatcherContext {
 
     /**
      * 加载jar包中的依赖jar包时，先将依赖的jar包生成到临时文件中，再加载
+     *
      * @param file
      * @return
      * @throws IOException
